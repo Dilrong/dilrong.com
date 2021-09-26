@@ -19,7 +19,7 @@ const Book: NextPage = () => {
 
   const getBooks = async () => {
     const { data, error } = await supabase.from("books").select();
-    setBook(data?.reverse());
+    setBook(data!.reverse());
     console.log(data);
     console.error(error);
   };
