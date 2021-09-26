@@ -101,7 +101,12 @@ const Header = () => {
 
   return (
     <>
-      <AppBar color="transparent" position="static" elevation={1}>
+      <AppBar
+        color="transparent"
+        position="static"
+        elevation={1}
+        sx={{ marginBottom: (theme) => theme.spacing(3) }}
+      >
         <Toolbar variant="dense">
           <Logo />
           <div style={{ flexGrow: 1 }} />
